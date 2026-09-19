@@ -16,11 +16,11 @@ module tb;
   and_beh_intra  U_INTRA  (.a(t_a), .b(t_b), .y(y_intra));
 
   // Waveform dump configuration
-  string vcd_file;
+  string vcd_file; 
   initial begin
     if ($value$plusargs("vcd=%s", vcd_file)) begin
       $dumpfile(vcd_file);
-      $dumpvars(0, tb);
+       $dumpvars(0, tb);
     end
   end
 
