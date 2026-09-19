@@ -13,7 +13,7 @@
 // and re-test before submitting.
 
 module alu (
-  input      [3:0] a,
+  input       [3:0] a,
   input      [3:0] b,
   input             op,      // 0 = add, 1 = sub
   output reg [3:0] result
@@ -36,4 +36,3 @@ module alu (
   end
 
 endmodule
-
